@@ -90,9 +90,12 @@ article
                 footer
                     strong + cite
                         margin-left: .5em
-                a
-                    padding: 0.2em
-                    border-bottom: 2px dotted
+            p a
+                color: #3273dc
+                &:hover
+                    color: black
+                padding: 0.2em
+                border-bottom: 2px dotted
 
             .message.message-immersive
                 border-radius: 0
@@ -100,6 +103,17 @@ article
 
                 .message-body
                     border: none
+            li a
+                color: #3273dc
+                &:hover
+                    color: black
+                padding: 0.2em
+                border-bottom: 2px dotted
+
+            .gallery-item
+                color: inherit
+                border-bottom: 0px
+                padding: 0px
         
         .article-tags
             display: flex
@@ -187,6 +201,8 @@ article
 
         a
             color: inherit
+            &:hover
+                color: $primary
 
 a
     &.article-nav-prev
