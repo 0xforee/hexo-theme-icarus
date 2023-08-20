@@ -38,6 +38,8 @@ module.exports = class extends Component {
             <script src={url_for('/js/column.js')}></script>
             <Plugins site={site} config={config} page={page} helper={helper} head={false} />
             <script src={url_for('/js/main.js')} defer></script>
+            <script type="module" src="https://cdn.jsdelivr.net/gh/emaction/frontend.dist@1.0.9/bundle.js"></script>
+
         </Fragment>;
     }
 };

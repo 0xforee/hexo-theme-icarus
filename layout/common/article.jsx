@@ -101,6 +101,7 @@ module.exports = class extends Component {
                     </div> : null}
                     {/* "Read more" button */}
                     {index && page.excerpt ? <a class="article-more button is-small is-size-7" href={`${url_for(page.link || page.path)}#more`}>{__('article.more')}</a> : null}
+                    {index ? null : <div class="article-tags is-size-7 mb-4"> <emoji-reaction availableArrayString="👍,thumbs-up;😄,smile-face;🎉,party-popper;😕,confused-face;❤️,red-heart;🚀,rocket;👀,eyes;"></emoji-reaction> </div>}
                     {/* Share button */}
                     {!index ? <Share config={config} page={page} helper={helper} /> : null}
                 </article>
