@@ -102,6 +102,11 @@ module.exports = class extends Component {
                     {/* "Read more" button */}
                     {index && page.excerpt ? <a class="article-more button is-small is-size-7" href={`${url_for(page.link || page.path)}#more`}>{__('article.more')}</a> : null}
                     {index ? null : <div class="article-tags is-size-7 mb-4"> <emoji-reaction availableArrayString="👍,thumbs-up;😄,smile-face;🎉,party-popper;😕,confused-face;❤️,red-heart;🚀,rocket;👀,eyes;"></emoji-reaction> </div>}
+                    {index ? null : <div style="display:box;text-align:center" class="mb-4">
+                        <hr></hr>
+                        <h1 class="is-size-17">欢迎关注我的公众号 0xforee，第一时间获取更多有价值的思考</h1>
+                        <img src="/img/wechat_follow.png" style="max-width:50%; left:50%;right:50%"/>
+                    </div>}
                     {/* Share button */}
                     {!index ? <Share config={config} page={page} helper={helper} /> : null}
                 </article>
